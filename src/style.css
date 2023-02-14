@@ -1,0 +1,62 @@
+#map {
+    height: 100vh;
+    width: 100vw;
+}
+
+.display {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    margin: 20px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    color: #d7fdcc;
+}
+
+#csvEater {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    color: #d7fdcc;
+}
+
+#csvFile-insert {
+    display: none;
+}
+
+#csvFile-label {
+    margin-top: 3.3%;
+}
+
+.greenOverlay {
+    height: 100vh;
+    width: 100vw;
+    background: green;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 5;
+}
+
+.sudoButton {
+    background: #d7fdcc;
+    border-radius: 8px;
+    color: black; 
+    font-size: 18px;
+    padding: 5px 15px;
+    margin-right: 20px;
+}
+
+.inputContainer {
+    background: #0e4823;
+    opacity: 0.5;
+    width: 620px;
+    height: 70px;
+    margin: auto;
+    border-radius: 8px;
+}
+

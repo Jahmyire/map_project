@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="mapContainer">
+            <div class="greenOverlay"></div>
+            <p class="display"><%= htmlWebpackPlugin.options.title %></p>
+            <div id="map"></div>
+            <div id="csvEater" class="jumbotron">
+                <h2>Share your favorite airports!</h2>
+                <p>Upload a CSV document with your favorite airports.  We'll put them on a map, and provide a shareable url.</p>
+                <div class="inputContainer">
+                    <input type="file" class="filestyle" id="csvFile-insert" accept=".csv" required>
+                    <label id="csvFile-label" for="csvFile-insert"><span class="sudoButton">Select File</span>Drag or drop a CSV file, or select one from your computer</label>
+                </div>
+            </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=<%= htmlWebpackPlugin.options.apiKey %>&libraries=places&callback=initMap" async defer></script>
+        <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+    </body>
+</html>
